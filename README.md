@@ -84,34 +84,33 @@ Sharpe = \frac{R_p - R_f}{\sigma_p}
 ---
 
 ## 4. Project Structure
+```
 portfolio-analytics-dashboard/
 │
 ├── app.py
 │
 ├── data/
-│ ├── raw/ # Original downloaded data (prices, factors, etc.)
-│ ├── processed/ # Cleaned and transformed datasets
-│ ├── portfolio_weights/ # Generated portfolio allocation outputs
-│ └── analytics/ # Computed metrics and summary results
+│   ├── raw/                       # Original downloaded data (prices, factors, etc.)
+│   ├── processed/                 # Cleaned and transformed datasets
+│   ├── portfolio_weights/         # Generated portfolio allocation outputs
+│   └── analytics/                 # Computed metrics and summary results
 │
 ├── data_processing/
-│ ├── ingestion.py # Data loading (e.g., yfinance, CSV)
-│ ├── preprocessing.py # Cleaning, return calculation, resampling
-│ ├── feature_engineering.py # Rolling metrics, excess returns, etc.
-│ └── portfolio_construction.py # Weight calculation logic
+│   ├── ingestion.py               # Data loading (e.g., yfinance, CSV)
+│   ├── preprocessing.py           # Cleaning, return calculation, resampling
+│   ├── feature_engineering.py     # Rolling metrics, excess returns
+│   └── portfolio_construction.py  # Weight calculation logic
 │
 ├── src/
-│ ├── performance.py # Performance metrics
-│ ├── risk.py # Risk metrics (VaR, ES, Volatility)
-│ ├── attribution.py # Return attribution analysis
-│ └── visualization.py # Plot functions for dashboard
+│   ├── performance.py             # Performance metrics
+│   ├── risk.py                    # Risk metrics (VaR, ES, Volatility)
+│   ├── attribution.py             # Return attribution analysis
+│   └── visualization.py           # Plot functions for dashboard
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
----
-
+```
 ## 4. Data Flow Explanation
 
 ### Step 1 – Raw Data (`data/raw`)
