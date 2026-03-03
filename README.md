@@ -207,8 +207,146 @@ $$
 
 ---
 
+## 6. How to Run (Streamlit)
 
-## 6. Future Improvements
+### a) Clone the repository
+```bash
+git clone https://github.com/vmhoangg/portfolio-analytics-dashboard.git
+cd portfolio-analytics-dashboard
+```
+---
+
+### b) Create a Virtual Environment (Recommended)
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment:
+
+Windows (PowerShell):
+```bash
+.venv\Scripts\Activate.ps1
+```
+
+Windows (CMD):
+```bash
+.venv\Scripts\activate.bat
+```
+
+macOS / Linux:
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### c) Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Verify installation:
+
+```bash
+pip list
+```
+
+---
+
+### d) Run the Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+By default, the application will open in your browser at:
+
+```
+http://localhost:8501
+```
+
+---
+
+### e) Configure the Dashboard (Sidebar Inputs)
+
+Once the app is running:
+
+- Select portfolio tickers (e.g., AAPL, MSFT, SPY)
+- Choose benchmark
+- Select date range
+- Adjust rolling window (if available)
+- Set confidence level for VaR / ES
+- Specify risk-free rate (for Sharpe ratio)
+
+After adjusting inputs, click **Run / Update / Refresh** (if implemented) to recompute analytics.
+
+---
+
+### f) Navigate Dashboard Sections
+
+Depending on implementation, the dashboard may include:
+
+- **Performance**
+  - Cumulative Returns
+  - Annualized Returns
+  - Rolling Returns
+
+- **Risk**
+  - Volatility
+  - Maximum Drawdown
+  - Value-at-Risk (VaR)
+  - Expected Shortfall (ES)
+  - Tracking Error
+
+- **Attribution**
+  - Excess return decomposition
+  - Allocation & selection effects
+
+- **Analytics Summary**
+  - Key statistics table
+  - Portfolio diagnostics
+
+---
+
+### g) Output Storage (If Enabled)
+
+If the data pipeline saves outputs, they are stored in:
+
+```
+data/processed/           # Cleaned return series
+data/portfolio_weights/   # Allocation weights
+data/analytics/           # Risk & performance metrics
+```
+
+To rerun processing manually (if applicable):
+
+```bash
+python data_processing/ingestion.py
+python data_processing/preprocessing.py
+python data_processing/portfolio_construction.py
+```
+
+---
+
+### Optional: Run on Different Port
+
+If port 8501 is busy:
+
+```bash
+streamlit run app.py --server.port 8502
+```
+
+---
+
+### Clear Streamlit Cache
+
+```bash
+streamlit cache clear
+```
+
+## 7. Future Improvements
 
 - Regime-switching volatility models
 - Machine learning-based volatility forecasting
@@ -218,7 +356,7 @@ $$
 
 ---
 
-## 7. Limitations
+## 8. Limitations
 
 - Historical simulation assumes a stable return distribution over time
 - Transaction costs, slippage, and liquidity constraints are not modelled
@@ -227,7 +365,7 @@ $$
 
 ---
 
-## 8. Academic Context
+## 9. Academic Context
 
 This dashboard is part of a quantitative portfolio analytics project focusing on:
 
