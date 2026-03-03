@@ -57,7 +57,6 @@ $$
 
 Annualization is performed using standard scaling factors.
 
----
 
 ### Volatility
 
@@ -67,7 +66,6 @@ $$
 \sigma_{annual} = \sigma_{daily} \times \sqrt{252}
 $$
 
----
 
 ### Value-at-Risk (Historical)
 
@@ -75,7 +73,6 @@ $$
 VaR_\alpha = \text{Quantile}(R, \alpha)
 $$
 
----
 
 ### Expected Shortfall
 
@@ -83,7 +80,6 @@ $$
 ES_\alpha = \mathbb{E}[R \mid R \le VaR_\alpha]
 $$
 
----
 
 ### Sharpe Ratio
 
