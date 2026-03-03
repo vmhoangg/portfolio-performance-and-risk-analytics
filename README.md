@@ -1,3 +1,6 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/vmhoangg/mlb-eda-project)
+![GitHub stars](https://img.shields.io/github/stars/vmhoangg/mlb-eda-project?style=social)
+
 # Portfolio Performance and Risk Analytics Dashboard
 
 A Streamlit-based analytics dashboard for evaluating portfolio performance, risk metrics, and attribution relative to a benchmark (e.g., SPY).
