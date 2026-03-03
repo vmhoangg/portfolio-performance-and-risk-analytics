@@ -208,11 +208,8 @@ $$
 
 ---
 
-## 6. How to Run Locally
 
-### Create virtual environment
-
-## 7. Future Improvements
+## 6. Future Improvements
 
 - Regime-switching volatility models
 - Machine learning-based volatility forecasting
@@ -222,7 +219,7 @@ $$
 
 ---
 
-## 8. Limitations
+## 7. Limitations
 
 - Historical simulation assumes a stable return distribution over time
 - Transaction costs, slippage, and liquidity constraints are not modelled
@@ -231,7 +228,7 @@ $$
 
 ---
 
-## 9. Academic Context
+## 8. Academic Context
 
 This dashboard is part of a quantitative portfolio analytics project focusing on:
 
