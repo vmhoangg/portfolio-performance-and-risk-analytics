@@ -196,6 +196,8 @@ $$
 Sharpe = \frac{R_p - R_f}{\sigma_p}
 $$
 
+---
+
 ## 6. How to Run Locally
 
 ### Create virtual environment
