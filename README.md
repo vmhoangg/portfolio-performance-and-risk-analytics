@@ -168,35 +168,33 @@ These outputs are consumed by `app.py`.
 
 ### Return Calculation
 
-\[
-r_t = \left(\frac{P_t}{P_{t-1}}\right) - 1
-\]
+$$
+r_t = \frac{P_t}{P_{t-1}} - 1
+$$
 
 ### Annualized Volatility
 
-\[
+$$
 \sigma_{annual} = \sigma_{daily} \times \sqrt{252}
-\]
+$$
 
 ### Value-at-Risk (Historical)
 
-\[
-VaR_\alpha = Quantile(returns, \alpha)
-\]
+$$
+VaR_\alpha = \text{Quantile}(returns, \alpha)
+$$
 
 ### Expected Shortfall
 
-\[
-ES_\alpha = Mean(Returns \mid Returns \le VaR_\alpha)
-\]
+$$
+ES_\alpha = \mathbb{E}[R \mid R \le VaR_\alpha]
+$$
 
 ### Sharpe Ratio
 
-\[
+$$
 Sharpe = \frac{R_p - R_f}{\sigma_p}
-\]
-
----
+$$
 
 ## 6. How to Run Locally
 
