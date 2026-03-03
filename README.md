@@ -1,5 +1,3 @@
-# portfolio-performance-and-risk-analytics
-
 # Portfolio Performance and Risk Analytics Dashboard
 
 A Streamlit-based analytics dashboard for evaluating portfolio performance, risk metrics, and attribution relative to a benchmark (e.g., SPY).
